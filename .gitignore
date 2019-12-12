@@ -1,0 +1,8 @@
+public/css
+public/font
+public/img
+public/js
+vendor
+.idea
+composer.lock
+composer.phar

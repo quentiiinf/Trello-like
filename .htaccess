@@ -1,0 +1,4 @@
+RewriteEngine on
+
+
+RewriteRule ^(.*)$ /framework/public/ [R=301,L]
