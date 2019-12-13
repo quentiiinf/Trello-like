@@ -34,10 +34,13 @@
       </div>
     </ol>
 
-
+  <form id="save">
+    <button type="submit" class="btn btn-success">Sauvegarder l'ordre</button>
+  </form>
 
 	</section>
   
+
   
 </div>  
 
@@ -45,7 +48,7 @@
 
 <?php ob_start(); ?>
 <script type="text/javascript" src="<?= $this->app->url('js/home.js') ?>"></script>
-<script type="text/javascript" src="<?= $this->app->url('js/jquery-sortable.js') ?>"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <?php $_content_scripts = ob_get_clean(); ?>
 
 <?php if(isset($errors['must_disconnect'])): ob_start(); ?>
