@@ -9,10 +9,10 @@ $router->error404(function(\Core\View\Html $html){
 // $router->newRoute('/framework/public', '\App\Controller\HomeController@index', 'home');
 
 
-$router->newRoute('', '\App\Controller\HomeController@index', 'home');
-$router->newRoute('/login', '\App\Controller\LoginController@index', 'login');
-$router->newRoute('/inscription', '\App\Controller\RegisterController@index', 'register');
-$router->newRoute('/deco', '\App\Controller\DisconnectController@index', 'deco');
+$router->newRoute('', '\App\Controller\HomeController@index', 'home', ['IsConnected@index']);
+$router->newRoute('login', '\App\Controller\LoginController@index', 'login', ['IsDisconnected@index']);
+$router->newRoute('inscription', '\App\Controller\RegisterController@index', 'register', ['IsDisconnected@index']);
+$router->newRoute('deco', '\App\Controller\DisconnectController@index', 'deco', ['IsConnected@index']);
 
 
 

@@ -31,8 +31,10 @@
 <?php $_content_body = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
-
 <script type="text/javascript" src="<?= $this->app->url('js/home.js') ?>"></script>
-
 <?php $_content_scripts = ob_get_clean(); ?>
+
+<?php if(isset($errors['must_disconnect'])): ob_start(); ?>
+    <h1>Vous êtes déjà connecté.</h1>
+<?php $_content_errors = ob_get_clean();  endif; ?>
 

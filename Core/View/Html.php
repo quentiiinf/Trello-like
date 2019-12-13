@@ -15,9 +15,12 @@ class Html
 
     private $app;
 
-    public function __construct(App $app)
+    private $route;
+
+    public function __construct(App $app, \Core\Router\Route $route)
     {
         $this->app = $app;
+        $this->route = $route;
     }
 
     public function render($_Html_file, $vars = array(), $_Html_template = true)

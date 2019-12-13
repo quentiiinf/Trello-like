@@ -17,7 +17,7 @@
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
     
     
-    <a class="navbar-brand" href="<?= $this->app->url('') ?>">Liste</a>
+    <a class="navbar-brand" href="<?= $this->route->showPath('home') ?>">Liste</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,7 +37,7 @@
                 <i class="fas fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item waves-effect waves-light" href="<?= $this->app->url('deco') ?>">Se déconnecter de <?= $_COOKIE['username'] ?></a>
+                <a class="dropdown-item waves-effect waves-light" href="<?= $this->route->showPath('deco') ?>">Se déconnecter de <?= $_COOKIE['username'] ?></a>
             </div>
             </li>
         </ul>
@@ -54,8 +54,8 @@
                 <i class="fas fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item waves-effect waves-light" href="<?= $this->app->url('inscription') ?>">S'inscrire</a>
-                <a class="dropdown-item waves-effect waves-light" href="<?= $this->app->url('login') ?>">Se connecter</a>
+                <a class="dropdown-item waves-effect waves-light" href="<?= $this->route->showPath('register') ?>">S'inscrire</a>
+                <a class="dropdown-item waves-effect waves-light" href="<?= $this->route->showPath('login') ?>">Se connecter</a>
             </div>
             </li>
         </ul>
