@@ -17,8 +17,7 @@
 
     <br/>
 
-    <!--First row-->
-    <div class="row d-flex justify-content-center" id="row">
+    <ol class="row d-flex justify-content-center sortable" id="row">
         <!--Big blue-->
         <div class="preloader-wrapper active m-t-5">
           <div class="spinner-layer spinner-blue-only">
@@ -33,8 +32,9 @@
             </div>
           </div>
       </div>
-    </div>
-    <!--First row-->
+    </ol>
+
+
 
 	</section>
   
@@ -45,6 +45,7 @@
 
 <?php ob_start(); ?>
 <script type="text/javascript" src="<?= $this->app->url('js/home.js') ?>"></script>
+<script type="text/javascript" src="<?= $this->app->url('js/jquery-sortable.js') ?>"></script>
 <?php $_content_scripts = ob_get_clean(); ?>
 
 <?php if(isset($errors['must_disconnect'])): ob_start(); ?>
