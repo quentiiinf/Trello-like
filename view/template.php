@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title><?= (isset($_content_title)) ? $_content_title : 'Liste' ?></title>
+    <title><?= (isset($_content_title)) ? $_content_title : 'Trello en mieux' ?></title>
 
-    <meta name="Description" content="<?= (isset($_content_description)) ? $_content_description : 'Super TP JQ' ?>">
+    <meta name="Description" content="<?= (isset($_content_description)) ? $_content_description : 'Mieux.... ou pas' ?>">
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">

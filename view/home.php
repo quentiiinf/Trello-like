@@ -18,8 +18,21 @@
     <br/>
 
     <!--First row-->
-    <div class="row" id="row">
-
+    <div class="row d-flex justify-content-center" id="row">
+        <!--Big blue-->
+        <div class="preloader-wrapper active m-t-5">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+      </div>
     </div>
     <!--First row-->
 
