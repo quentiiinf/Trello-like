@@ -17,6 +17,16 @@
 
     <br/>
 
+    <div class="btn-group btn-group-toggle p-3" id="save-or-cancel">
+      <form id="save" class="navbar-nav ml-auto nav-flex-icons">
+            <button type="submit" class="btn btn-sm btn-success">Sauvegarder l'ordre</button>
+        </form>
+      
+        <form class="navbar-nav ml-auto nav-flex-icons" method="GET">
+            <button type="submit" class="btn btn-sm btn-warning">Annuler</button>
+        </form>
+    </div>    
+
     <ol class="row d-flex justify-content-center sortable" id="row">
         <!--Big blue-->
         <div class="preloader-wrapper active m-t-5">
@@ -34,9 +44,6 @@
       </div>
     </ol>
 
-  <form id="save">
-    <button type="submit" class="btn btn-success">Sauvegarder l'ordre</button>
-  </form>
 
 	</section>
   
