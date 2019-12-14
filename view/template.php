@@ -84,33 +84,33 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Featues</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Features</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <ul>
-            <li>Les mots de passes envoyés à l'API sont hashés en (préciser l'algo)</li>
-            <li>Possibilité d'ajouter des ToDoList</li>
+            <li>Les mots de passes envoyés à l'API sont hashés en sha256.</li>
+            <li>Possibilité d'ajouter des ToDoList.</li>
             <li>Possibilité d'ajouter des tâches dans les ToDoList</li>
-            <li>La connexion au site est permanante jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend</li>
-            <li>Le backend utilise un framework maison</li>
+            <li>La connexion au site est permanante jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend.</li>
+            <li>Le backend utilise un framework maison.</li>
             <li>Les pages d'inscriptions et de connexion ne sont pas accessible si on est déjà authentifié.
                  Nous sommes automatiquement redirigé vers la page d'accueil si on tent d'y accéder
-                  (middleware backend du framework)</li>
+                  (middleware backend du framework).</li>
             <li>Les pages de déconnexion et la page d'accueil permettant d'afficher les ToDoList ne sont pas accessible. 
                 Nous sommes automatiquement redirigé vers la page de login si on tente d'y accéder
                 (middleware backend du framework)
             </li>
-            <li>Possibilité de modifier le nom des ToDoList ou des Listes</li>
-            <li>Possibilité de supprimer les listes ou ToDoList</li>
-            <li>Possibilité de déplacer les listes et les ToDoList pour changer l'ordre.</li>
-            <li>On peut également déplacer des listes d'une ToDoList à une autre.</li>
-            <li>Une fois la modification de l'ordre effectué (features précédent), un bouton de sauvegarde permet de rendre le changement persistant. 
-                L'emplacement des listes et étiquette sera donc le même que celui choisi même après actualisation de la page.
-            </li>
-            <li>Pour annuler la modification de l'ordre, il existe également un bouton "annuler" pour revenir à l'état précédent</li>
+            <li>Possibilité de modifier le nom des ToDoList ou des tâches.</li>
+            <li>Possibilité de supprimer les tâches ou ToDoList.</li>
+            <li>Possibilité de déplacer les tâches et les ToDoList pour changer l'ordre d'affichage.</li>
+            <li>On peut également déplacer des tâches d'une ToDoList à une autre.</li>
+            <li>Une fois la modification de l'ordre effectué (features précédent), un bouton de sauvegarde permet de rendre le changement persistant
+                même après une actualisation</li>
+            <li>Pour annuler la modification de l'ordre des éléments qu'on vient de modifier,
+                 il existe également un bouton "annuler"</li>
             <li>Les boutons "annuler" et "sauvegarder" n'apparaissent que si on à modifié l'odre.</li>
             <li>Animation : animation lors de la connexion ou l'inscription un smiley apparait (de bas en haut) avant d'être redirigé</li>
 
