@@ -1,0 +1,12 @@
+.pointer {cursor: pointer;}
+
+
+ol.sortable {
+    list-style-type: none;
+}   
+
+.sortable-placeholder {
+    border-left: 4px solid orange;
+    margin: 0 1em 1em 0;
+    height: 50px;
+  }
