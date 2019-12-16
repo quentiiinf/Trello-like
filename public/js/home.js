@@ -44,11 +44,6 @@ $(document).ready(function(){
 
 })
 
-$(document).on('click', '#row li', function(e){
-    $('.child-sortable').hide()
-    $(this).find('.child-sortable').show()
-})
-
 $(document).on('submit', '#save', function(e){
 
     e.preventDefault();
