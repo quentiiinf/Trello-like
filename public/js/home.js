@@ -5,11 +5,12 @@ $('#save-or-cancel').hide()
 $(document).ready(function(){
 
     $("ol.sortable").sortable({
-        placeholder: "sortable-placeholder",
         stop: function( event, ui ) {
             $('#save-or-cancel').show()
-        }
+        },
+        tolerance: "pointer"
     });
+
 
 
     $.ajax({
