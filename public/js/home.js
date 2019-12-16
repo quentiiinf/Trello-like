@@ -55,19 +55,17 @@ $(document).on('submit', '#save', function(e){
         todoListes: []
     }
 
+    var this2;
     $('#row li').each(function(i){
-
-        console.log(list)
-
         new_list.todoListes[i] = {
             name: list.todoListes[$(this).attr('parent')].name,
             elements: []
         }
 
-        var this2 = this;
+        this2 = this;
 
-        $(`.child-sortable-${i}`).each(function(i2){
-            new_list.todoListes[$(this).parents('li').attr('parent')].elements[i2] = list.todoListes[$(this).attr('parent')].elements[$(this).attr('child')]
+        $(this).find(`.child-sortable`).children().each(function(i2){
+            new_list.todoListes[i].elements[i2] = list.todoListes[$(this).attr('parent')].elements[$(this).attr('child')]
         }) 
     })
 
