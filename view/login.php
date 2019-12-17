@@ -25,7 +25,7 @@
         <input type="password" id="password" class="form-control mb-4" placeholder="Password">
 
         <!-- Sign in button -->
-        <button class="btn btn-info btn-block my-4" type="submit" id="submit">Se connecter</button>
+        <button class="btn btn-danger btn-block my-4" type="submit" id="submit">Se connecter</button>
 
 
       </form>

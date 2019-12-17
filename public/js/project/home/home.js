@@ -257,7 +257,7 @@ let getHtmlList = function (data) {
           
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                      <button class="btn btn-default" type="submit">Modifier</button>
+                      <button class="btn btn-danger" type="submit">Modifier</button>
                     </div>	  
                 </form>
               </div>
@@ -270,12 +270,12 @@ let getHtmlList = function (data) {
             <!-- Card content -->
             <div class="card-body">
 
-                <h5 class="dark-grey-text my-4">${obj.name}
+                <h5 class="dark-grey-text my-4 note note-light">${obj.name}
                     <div parent="${i}" class="delete-parent pointer float-right">
-                        <i class="fas fa-eraser text-primary"></i>
+                        <i class="fas fa-eraser text-danger"></i>
                     </div> 
                     <div class="pointer float-right" data-toggle="modal" data-target="#modal${i}">
-                        <i class="fas fa-pencil-alt text-primary"></i>
+                        <i class="fas fa-pencil-alt text-danger"></i>
                     </div>    
                 </h5>
                 <br/>
@@ -304,10 +304,10 @@ let getHtmlList = function (data) {
                     $(`#${i}-todo`).append(` 
                     <div class="inline child-sortable-${i}" id="${i}-${i2}" parent="${i}" child="${i2}">${elements[i2]} 
                         <div parent="${i}" child="${i2}" class="delete-child pointer float-right">
-                            <i class="fas fa-eraser text-primary"></i>
+                            <i class="fas fa-eraser text-danger"></i>
                         </div> 
                         <div class="pointer float-right" data-toggle="modal" data-target="#modal${i}-${i2}  ">
-                            <i class="fas fa-pencil-alt text-primary"></i>
+                            <i class="fas fa-pencil-alt text-danger"></i>
                         </div>  
                         <div class="modal fade" id="modal${i}-${i2}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -328,7 +328,7 @@ let getHtmlList = function (data) {
                       
                                 </div>
                                 <div class="modal-footer d-flex justify-content-center">
-                                  <button class="btn btn-default" type="submit">Modifier</button>
+                                  <button class="btn btn-danger" type="submit">Modifier</button>
                                 </div>	  
                             </form>
                           </div>

@@ -22,7 +22,7 @@
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#basicExampleModal">
     Features
     </button>
 
@@ -81,40 +81,40 @@
 <!-- Modal -->
 <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
-  <div class="modal-dialog modal-notify modal-info" role="document">
+  <div class="modal-dialog modal-notify modal-danger" role="document">
     <div class="modal-content">
       <div class="modal-header"> 
         <h5 class="modal-title" id="exampleModalLabel" style="color: white;">
           Features
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span style="color: white;" aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body p-5" style="text-align: justify;">
-        <ul>
-            <li>Les mots de passes envoyés à l'API sont hashés en sha256.</li>
-            <li>Possibilité d'ajouter des ToDoList.</li>
-            <li>Possibilité d'ajouter des tâches dans les ToDoList</li>
-            <li>La connexion au site est permanante jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend.</li>
-            <li>Le backend utilise un framework maison.</li>
-            <li>Les pages d'inscriptions et de connexion ne sont pas accessible si on est déjà authentifié.
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> • Les mots de passes envoyés à l'API sont hashés en sha256.</li>
+            <li class="list-group-item"> • Possibilité d'ajouter des ToDoList.</li>
+            <li class="list-group-item"> • Possibilité d'ajouter des tâches dans les ToDoList</li>
+            <li class="list-group-item"> • La connexion au site est permanante jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend.</li>
+            <li class="list-group-item"> • Le backend utilise un framework maison.</li>
+            <li class="list-group-item"> • Les pages d'inscriptions et de connexion ne sont pas accessible si on est déjà authentifié.
                  Nous sommes automatiquement redirigé vers la page d'accueil si on tent d'y accéder
                   (middleware backend du framework).</li>
-            <li>Les pages de déconnexion et la page d'accueil permettant d'afficher les ToDoList ne sont pas accessible. 
+            <li class="list-group-item"> • Les pages de déconnexion et la page d'accueil permettant d'afficher les ToDoList ne sont pas accessible. 
                 Nous sommes automatiquement redirigé vers la page de login si on tente d'y accéder
                 (middleware backend du framework)
             </li>
-            <li>Possibilité de modifier le nom des ToDoList ou des tâches.</li>
-            <li>Possibilité de supprimer les tâches ou ToDoList.</li>
-            <li>Possibilité de déplacer les tâches et les ToDoList pour changer l'ordre d'affichage.</li>
-            <li>On peut également déplacer des tâches d'une ToDoList à une autre.</li>
-            <li>Une fois la modification de l'ordre effectué (features précédent), un bouton de sauvegarde permet de rendre le changement persistant
+            <li class="list-group-item"> • Possibilité de modifier le nom des ToDoList ou des tâches.</li>
+            <li class="list-group-item"> • Possibilité de supprimer les tâches ou ToDoList.</li>
+            <li class="list-group-item"> • Possibilité de déplacer les tâches et les ToDoList pour changer l'ordre d'affichage.</li>
+            <li class="list-group-item"> • On peut également déplacer des tâches d'une ToDoList à une autre.</li>
+            <li class="list-group-item"> • Une fois la modification de l'ordre effectué (features précédent), un bouton de sauvegarde permet de rendre le changement persistant
                 même après une actualisation</li>
-            <li>Pour annuler la modification de l'ordre des éléments qu'on vient de modifier,
+            <li class="list-group-item"> • Pour annuler la modification de l'ordre des éléments qu'on vient de modifier,
                  il existe également un bouton "annuler"</li>
-            <li>Les boutons "annuler" et "sauvegarder" n'apparaissent que si on à modifié l'odre.</li>
-            <li>Animation : animation lors de la connexion ou l'inscription un smiley apparait (de bas en haut) avant d'être redirigé</li>
+            <li class="list-group-item"> • Les boutons "annuler" et "sauvegarder" n'apparaissent que si on à modifié l'odre.</li>
+            <li class="list-group-item"> • Animation : animation lors de la connexion ou l'inscription un smiley apparait (de bas en haut) avant d'être redirigé</li>
 
         </ul>
       </div>

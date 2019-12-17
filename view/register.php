@@ -28,7 +28,7 @@
         <input type="password" id="password2" class="form-control mb-4" placeholder="Confirmez votre mot de passe">
 
         <!-- Sign in button -->
-        <button class="btn btn-info btn-block my-4" type="submit" id="submit">S'inscrire</button>
+        <button class="btn btn-danger btn-block my-4" type="submit" id="submit">S'inscrire</button>
 
 
       </form>
