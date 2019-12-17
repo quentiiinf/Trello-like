@@ -16,3 +16,39 @@
 * Pour annuler la modification de l'ordre des éléments qu'on vient de modifier, il existe également un bouton "annuler"
 * Les boutons "annuler" et "sauvegarder" n'apparaissent que si on à modifié l'odre.
 * Animation : animation lors de la connexion ou l'inscription un smiley apparait (de bas en haut) avant d'être redirigé
+
+## Framework maison
+
+### Routes
+
+`/route.php`
+
+### Contrôleurs
+
+Répertoire `/app/controller/`. Sur cette application, les contrôleurs ne font que renvoyer la vue sans traitements
+
+### Vue
+
+Répertoire `/view`
+
+### Assets (js, css, etc)
+
+Les assets se situent dans le répertoire `/public`. 
+
+Le code javascript développé pour ce projet se situe dans `/public/js/project/` et `/public/css/style.css`. Le reste des fichiers sont des librairies. 
+
+### Middleware
+
+Les middleware se situe dans `/app/middleware`. Ils permettent d'effectuer des traitements avant le chargement des pages (par exemple vérifier que l'utilisateur est bien connecté et le rediriger si besoin...)
+
+Le fichier `/middleware.php` permet d'ajouter un middleware à toutes les routes
+
+## Installation de l'application 
+
+* Cloner ce répo
+* Requière PHP 7.4
+* installer composer et effectuer un composer update sur le projet. 
+
+## Démo
+
+
