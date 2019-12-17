@@ -48,6 +48,6 @@
 
 <?php ob_start(); ?>
 
-<script type="text/javascript" src="<?= $this->app->url('js/login.js') ?>"></script>
+<script type="text/javascript" src="<?= $this->app->url('js/project/login/login.js') ?>"></script>
 
 <?php $_content_scripts = ob_get_clean(); ?>

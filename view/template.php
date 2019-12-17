@@ -12,7 +12,7 @@
     <link href="<?= $this->app->url('css/style.css') ?>" rel="stylesheet">
 </head>
 
-<body class="">
+<body>
 
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark elegant-color" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
     
@@ -81,15 +81,17 @@
 <!-- Modal -->
 <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-notify modal-info" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Features</h5>
+      <div class="modal-header"> 
+        <h5 class="modal-title" id="exampleModalLabel" style="color: white;">
+          Features
+        </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body p-5" style="text-align: justify;">
         <ul>
             <li>Les mots de passes envoyés à l'API sont hashés en sha256.</li>
             <li>Possibilité d'ajouter des ToDoList.</li>

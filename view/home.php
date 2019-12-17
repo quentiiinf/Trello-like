@@ -54,7 +54,7 @@
 <?php $_content_body = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
-<script type="text/javascript" src="<?= $this->app->url('js/home.js') ?>"></script>
+<script type="text/javascript" src="<?= $this->app->url('js/project/home/home.js') ?>"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <?php $_content_scripts = ob_get_clean(); ?>
 

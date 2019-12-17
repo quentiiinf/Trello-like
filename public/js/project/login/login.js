@@ -49,7 +49,6 @@ $('#login-form').submit( function (e) {
                     
                 }
 
-
    });   
 
 });

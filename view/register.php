@@ -51,6 +51,6 @@
 
 <?php ob_start(); ?>
 
-<script type="text/javascript" src="<?= $this->app->url('js/register.js') ?>"></script>
+<script type="text/javascript" src="<?= $this->app->url('js/project/register/register.js') ?>"></script>
 
 <?php $_content_scripts = ob_get_clean(); ?>
