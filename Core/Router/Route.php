@@ -120,7 +120,7 @@ class Route
             }
         }
 
-        return $this->app->url($path);
+        return $this->app->urlWithoutPath($path);
     }
 
 }

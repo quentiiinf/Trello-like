@@ -45,6 +45,14 @@ $(document).ready(function(){
 
 })
 
+$(document).on('click', '.add-child-text', function(e){
+    $('.add-child-text').removeClass('d-none')
+    $('.add-child').addClass('d-none')
+
+    $(this).prev().removeClass('d-none')
+    $(this).addClass('d-none')
+})
+
 $(document).on('submit', '#save', function(e){
 
     e.preventDefault();
@@ -272,19 +280,20 @@ let getHtmlList = function (data) {
 
                 <h5 class="dark-grey-text my-4 note note-light">${obj.name}
                     <div parent="${i}" class="delete-parent pointer float-right">
-                        <i class="fas fa-eraser text-danger"></i>
+                        <i class="fas fa-eraser"></i>
                     </div> 
                     <div class="pointer float-right" data-toggle="modal" data-target="#modal${i}">
-                        <i class="fas fa-pencil-alt text-danger"></i>
+                        <i class="fas fa-pencil-alt"></i>
                     </div>    
                 </h5>
                 <br/>
                 <div id="${i}-todo" class="child-sortable" style="min-height: 50px;">
                 </div>
 
-                <form class="add-child">
+                <form class="add-child d-none">
                     <input type="text" parent="${i}" class="form-control" placeholder="Ajouter un élément">
                 </form>
+                <div class="add-child-text m-t-3"><i class="fas fa-plus-circle text-danger" style="font-family: "Roboto", sans-serif;"> Ajouter une tâche</i></div>
 
             </div>
 
@@ -304,10 +313,10 @@ let getHtmlList = function (data) {
                     $(`#${i}-todo`).append(` 
                     <div class="inline child-sortable-${i}" id="${i}-${i2}" parent="${i}" child="${i2}">${elements[i2]} 
                         <div parent="${i}" child="${i2}" class="delete-child pointer float-right">
-                            <i class="fas fa-eraser text-danger"></i>
+                            <i class="fas fa-eraser "></i>
                         </div> 
                         <div class="pointer float-right" data-toggle="modal" data-target="#modal${i}-${i2}  ">
-                            <i class="fas fa-pencil-alt text-danger"></i>
+                            <i class="fas fa-pencil-alt "></i>
                         </div>  
                         <div class="modal fade" id="modal${i}-${i2}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
