@@ -48,9 +48,19 @@ $(document).ready(function(){
 $(document).on('click', '.add-child-text', function(e){
     $('.add-child-text').removeClass('d-none')
     $('.add-child').addClass('d-none')
+    e.stopPropagation()
 
     $(this).prev().removeClass('d-none')
     $(this).addClass('d-none')
+})
+
+$(document).on('click', '.add-child', function(e){
+    e.stopPropagation()
+})
+
+$(document).on('click', 'body', function(e){
+    $('.add-child-text').removeClass('d-none')
+    $('.add-child').addClass('d-none')
 })
 
 $(document).on('submit', '#save', function(e){
@@ -293,7 +303,7 @@ let getHtmlList = function (data) {
                 <form class="add-child d-none">
                     <input type="text" parent="${i}" class="form-control" placeholder="Ajouter un élément">
                 </form>
-                <div class="add-child-text m-t-3"><i class="fas fa-plus-circle text-danger" style="font-family: "Roboto", sans-serif;"> Ajouter une tâche</i></div>
+                <div class="add-child-text m-t-3 pointer"><i class="fas fa-plus-circle text-danger" style="font-family: "Roboto", sans-serif;"> Ajouter une tâche</i></div>
 
             </div>
 
