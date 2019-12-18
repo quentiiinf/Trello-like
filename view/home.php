@@ -3,7 +3,7 @@
   <div class="container my-5">
     <section class="dark-grey-text">
       <h3 class="text-center font-weight-bold mb-4 pb-2">Trello V2</h3>
-      <hr class="w-header">>
+      <hr class="w-header">
       <p class="lead text-center w-responsive mx-auto text-muted mt-4 pt-2 mb-5">Mais en mieux</p>  
       <form class="add-parent">
         <input type="text" class="form-control" placeholder="Ajouter une todolist"/>
