@@ -48,7 +48,10 @@ Le fichier `/middleware.php` permet d'ajouter un middleware à toutes les routes
 * Cloner ce répo
 * Requière PHP 7.4
 * installer composer et effectuer un composer update sur le projet. 
+* Modifier le fichier config.php en conséquence
+* Modifier le fichier route.php pour que les routes match l'url (pour la démo la route login serait : 'exo-ipi-jquery/public/login')
 
 ## Démo
 
+[http://5.196.105.199/exo-ipi-jquery/public/](http://5.196.105.199/exo-ipi-jquery/public/)
 
