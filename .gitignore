@@ -5,3 +5,4 @@ composer.phar
 .gitignore
 route.php
 config.php
+.htaccess
