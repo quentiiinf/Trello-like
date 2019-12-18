@@ -25,12 +25,14 @@ $('#login-form').submit( function (e) {
             'password': sha256($('#password').val()),
         },
         error    : function(request, error) { // Info Debuggage si erreur         
-                     alert("Erreur : responseText: "+request);
+                     $("#errors").html(`<div style="margin-top: 70px;" class='alert alert-success'> Erreur ! Vos indentifiants sont incorrectes. Vous-êtes vous   
+                        <a href="inscription">inscrit</a> ?
+                     </div>`);
                    },
         success  : function(data) {
                     $('#password').addClass('is-valid disabled');
                     $('#username').addClass('is-valid disabled');
-                    $("body").prepend("<div class='alert alert-success'> Super, connexion réussie. <strong> Vous pouvez retourner sur la page principal à l'aide du menu. </strong><br/>Redirection dans 1 seconde</div>");
+                    $("#errors").html("<div style='margin-top: 70px;' class='alert alert-success'> Super, connexion réussie. <strong> Vous pouvez retourner sur la page principal à l'aide du menu. </strong><br/>Redirection dans 1 seconde</div>");
                     $('#submit').addClass('disabled');
                     $.cookie('username', $('#username').val());
                     $.cookie('password', sha256($('#password').val()));

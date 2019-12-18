@@ -73,6 +73,7 @@
 </nav>
 
 <div style="height: 50px;"></div>
+<div id="errors"></div>
 
 <?= (isset($_content_errors)) ? $_content_errors : '' ?>
 

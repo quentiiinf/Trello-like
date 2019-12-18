@@ -37,7 +37,7 @@ $('#register-form').submit( function (e) {
                     $('#password').addClass('is-valid disabled');
                     $('#username').addClass('is-valid disabled');
                     $('#submit').addClass('disabled');
-                    $("body").prepend("<div class='alert alert-success'> Super, inscription réussie. <strong> Vous pouvez retourner sur la page principal à l'aide du menu. <br/>Redirection dans 1 seconde.</div>");
+                    $("#errors").html("<div style='margin-top: 70px;' class='alert alert-success'> Super, inscription réussie. <strong> Vous pouvez retourner sur la page principal à l'aide du menu. <br/>Redirection dans 1 seconde.</div>");
 
                     $.cookie('username', $('#username').val());
                     $.cookie('password', sha256($('#password').val()));
