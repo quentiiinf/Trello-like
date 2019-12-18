@@ -8,7 +8,8 @@ $(document).ready(function(){
         stop: function( event, ui ) {
             $('#save-or-cancel').show()
         },
-        tolerance: "pointer"
+        tolerance: "pointer",
+        distance: 20
     });
 
 
