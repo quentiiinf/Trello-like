@@ -98,26 +98,26 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item"> • Les mots de passes envoyés à l'API sont hashés en sha256.</li>
             <li class="list-group-item"> • Possibilité d'ajouter des ToDoList.</li>
-            <li class="list-group-item"> • Possibilité d'ajouter des tâches dans les ToDoList</li>
-            <li class="list-group-item"> • La connexion au site est permanante jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend.</li>
+            <li class="list-group-item"> • Possibilité d'ajouter des tâches dans les ToDoList.</li>
+            <li class="list-group-item"> • La connexion au site est permanente jusqu'à la déconnexion, pas besoin de se reconnecter à chaque actualisation grâce au backend.</li>
             <li class="list-group-item"> • Le backend utilise un framework maison.</li>
-            <li class="list-group-item"> • Les pages d'inscriptions et de connexion ne sont pas accessible si on est déjà authentifié.
-                 Nous sommes automatiquement redirigé vers la page d'accueil si on tent d'y accéder
+            <li class="list-group-item"> • Les pages d'inscription et de connexion ne sont pas accessibles si on est déjà authentifié.
+                 Nous sommes automatiquement redirigés vers la page d'accueil si on tente d'y accéder
                   (middleware backend du framework).</li>
-            <li class="list-group-item"> • Les pages de déconnexion et la page d'accueil permettant d'afficher les ToDoList ne sont pas accessible. 
-                Nous sommes automatiquement redirigé vers la page de login si on tente d'y accéder
+            <li class="list-group-item"> • Les pages de déconnexion et la page d'accueil permettant d'afficher les ToDoList ne sont pas accessibles. 
+                Nous sommes automatiquement redirigés vers la page de login si on tente d'y accéder
                 (middleware backend du framework)
             </li>
             <li class="list-group-item"> • Possibilité de modifier le nom des ToDoList ou des tâches.</li>
             <li class="list-group-item"> • Possibilité de supprimer les tâches ou ToDoList.</li>
             <li class="list-group-item"> • Possibilité de déplacer les tâches et les ToDoList pour changer l'ordre d'affichage.</li>
             <li class="list-group-item"> • On peut également déplacer des tâches d'une ToDoList à une autre.</li>
-            <li class="list-group-item"> • Une fois la modification de l'ordre effectué (features précédent), un bouton de sauvegarde permet de rendre le changement persistant
+            <li class="list-group-item"> • Une fois la modification de l'ordre effectuée (features précédent), un bouton de sauvegarde permet de rendre le changement persistant
                 même après une actualisation</li>
             <li class="list-group-item"> • Pour annuler la modification de l'ordre des éléments qu'on vient de modifier,
                  il existe également un bouton "annuler"</li>
-            <li class="list-group-item"> • Les boutons "annuler" et "sauvegarder" n'apparaissent que si on à modifié l'odre.</li>
-            <li class="list-group-item"> • Animation : animation lors de la connexion ou l'inscription un smiley apparait (de bas en haut) avant d'être redirigé</li>
+            <li class="list-group-item"> • Les boutons "annuler" et "sauvegarder" n'apparaissent que si on a modifié l'ordre.</li>
+            <li class="list-group-item"> • Animation : Un smiley apparait (de bas en haut) lors de la connexion ou de l'inscription avant d'être redirigé</li>
 
         </ul>
       </div>

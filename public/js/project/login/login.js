@@ -25,7 +25,7 @@ $('#login-form').submit( function (e) {
             'password': sha256($('#password').val()),
         },
         error    : function(request, error) { // Info Debuggage si erreur         
-                     $("#errors").html(`<div style="margin-top: 70px;" class='alert alert-success'> Erreur ! Vos indentifiants sont incorrectes. Vous-êtes vous   
+                     $("#errors").html(`<div style="margin-top: 70px;" class='alert alert-success'> Erreur ! Vos identifiants sont incorrectes. Vous-êtes vous   
                         <a href="inscription">inscrit</a> ?
                      </div>`);
                    },
