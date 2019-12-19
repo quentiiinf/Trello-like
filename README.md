@@ -1,5 +1,7 @@
 ﻿# exo-ipi-jquery
 
+Application Jquery/ajax trello-like pour évalutation de compétences IPI Jquery CDEV201
+
 ## Features 
 * Les mots de passes envoyés à l'API sont hashés en sha256.
 * Possibilité d'ajouter des ToDoList.
