@@ -36,6 +36,16 @@ $(document).ready(function(){
                                 list = data;
                                 getHtmlList(data);
                                 $('#row').removeClass('justify-content-center');
+
+                                // Couleur en fonction du choix utilisateur
+                                if ($.cookie("color") != 'danger') {
+                                    $(`#row .btn-danger`).addClass(`btn-${$.cookie("color")}`);
+                                    $(`#row .btn-danger`).removeClass(`btn-danger`);
+                                    $(`#row .modal-danger`).addClass(`modal-${$.cookie("color")}`);
+                                    $(`#row .modal-danger`).removeClass(`modal-danger`);    
+                                    $(`#row .text-danger`).addClass(`text-${$.cookie("color")}`);
+                                    $(`#row .text-danger`).removeClass(`text-danger`); 
+                                  }                                
                             },
                             1000
                         )
@@ -266,7 +276,7 @@ let getHtmlList = function (data) {
 
             <div class="modal fade" id="modal${i}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-notify modal-danger" style="color: white;" role="document">
               <div class="modal-content">
                 <div class="modal-header text-center">
                   <h4 class="modal-title w-100 font-weight-bold">Modifier un parent</h4>
@@ -338,7 +348,7 @@ let getHtmlList = function (data) {
                         </div>  
                         <div class="modal fade" id="modal${i}-${i2}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-notify modal-danger" style="color: white;" role="document">
                           <div class="modal-content">
                             <div class="modal-header text-center">
                               <h4 class="modal-title w-100 font-weight-bold">Modifier un parent</h4>

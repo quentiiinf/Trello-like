@@ -72,8 +72,19 @@
     </div>
 </nav>
 
-<div style="height: 50px;"></div>
+<div style="height: 100px;"></div>
 <div id="errors"></div>
+
+<div class="container">
+<label>Couleur personalisée</label>
+<select style="width: 100px; padding: 0px; margin-left: 20px;" class="form-control" id="change-color">
+      <option value="danger">Rouge</option>
+      <option value="warning">Orange</option>
+      <option value="info"> Bleu clair</option>
+      <option value="primary">Bleu</option>
+</select>
+
+</div>
 
 <!-- ** Affichage des erreurs ** -->
 <?= (isset($_content_errors)) ? $_content_errors : '' ?>
@@ -133,6 +144,36 @@
 <script type="text/javascript" src="<?= $this->app->url('js/bootstrap.js') ?>"></script>
 <script type="text/javascript" src="<?= $this->app->url('js/mdb.js') ?>"></script>
 <script type="text/javascript" src="<?= $this->app->url('js/jquery.cookie.js') ?>"></script>
+
+<!-- ** Choix de la couleur ** -->
+<script type="text/javascript">
+  $('#change-color').change(function(){
+    $(`.btn-${$.cookie("color")}`).addClass(`btn-${$(this).val()}`);
+    $(`.btn-${$.cookie("color")}`).removeClass(`btn-${$.cookie("color")}`);
+    $(`.modal-${$.cookie("color")}`).addClass(`modal-${$(this).val()}`);
+    $(`.modal-${$.cookie("color")}`).removeClass(`modal-${$.cookie("color")}`);
+    $(`.text-${$.cookie("color")}`).addClass(`text-${$(this).val()}`);
+    $(`.text-${$.cookie("color")}`).removeClass(`text-${$.cookie("color")}`);
+    $.cookie("color", $(this).val());
+  })
+
+  if ($.cookie("color") == null) {
+    $.cookie("color", 'danger');
+  }
+
+  $(`#change-color option[value=${$.cookie("color")}]`).attr('selected','selected');
+
+  if ($.cookie("color") != 'danger') {
+    $(`.btn-danger`).addClass(`btn-${$.cookie("color")}`);
+    $(`.btn-danger`).removeClass(`btn-danger`);
+    $(`.modal-danger`).addClass(`modal-${$.cookie("color")}`);
+    $(`.modal-danger`).removeClass(`modal-danger`);    
+    $(`.text-danger`).addClass(`text-${$.cookie("color")}`);
+    $(`.text-danger`).removeClass(`text-danger`);     
+  }
+
+
+</script>
 
 <!-- ** Méthode permettant le hashage des mots de passe ** -->
 <script type="text/javascript">
