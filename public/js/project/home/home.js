@@ -96,6 +96,9 @@ $(document).on('submit', '#save', function(e){
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
+        error: function(request, error) {        
+            alert("Une erreur est survenue, les changements n'ont probablement pas été pris en compte. Veuillez actualiser la page.");  
+        },
         success: function (data) {
             $('#save-or-cancel').hide()
         },
@@ -142,7 +145,8 @@ $(document).on('submit', '.modify-child', function(e){
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
-        success: function (data) {
+        error: function(request, error) {        
+            alert("Une erreur est survenue, les changements n'ont probablement pas été pris en compte. Veuillez actualiser la page.");  
         },
         data: JSON.stringify(list)
     });
@@ -182,7 +186,8 @@ $(document).on('submit', '.add-child', function(e){
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
-        success: function (data) {
+        error: function(request, error) {        
+            alert("Une erreur est survenue, les changements n'ont probablement pas été pris en compte. Veuillez actualiser la page.");  
         },
         data: JSON.stringify(list)
     });
@@ -216,7 +221,8 @@ $(document).on('submit', '.add-parent', function(e){
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
-        success: function (data) {
+        error: function(request, error) {        
+            alert("Une erreur est survenue, les changements n'ont probablement pas été pris en compte. Veuillez actualiser la page.");  
         },
         data: JSON.stringify(list)
     });
@@ -239,7 +245,8 @@ let deleteElement = function (parent, child) {
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
-        success: function (data) {
+        error: function(request, error) {        
+            alert("Une erreur est survenue, les changements n'ont probablement pas été pris en compte. Veuillez actualiser la page.");  
         },
         data: JSON.stringify(list)
     });
